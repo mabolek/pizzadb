@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file source-language="en" datatype="plaintext" original="locallang_tca.xlf" product-name="pizzadb">
+        <body>
+            <trans-unit id="plugin.menu">
+                <source>Pizza menu</source>
+            </trans-unit>
+            <trans-unit id="pizza">
+                <source>Pizza</source>
+            </trans-unit>
+            <trans-unit id="pizza.name">
+                <source>Name</source>
+            </trans-unit>
+            <trans-unit id="pizza.ingredients">
+                <source>Ingredients</source>
+            </trans-unit>
+            <trans-unit id="pizza.ingredients.description">
+                <source>One ingredient per line</source>
+            </trans-unit>
+            <trans-unit id="pizza.description">
+                <source>Description</source>
+            </trans-unit>
+            <trans-unit id="pizza.prices">
+                <source>Prices (USD)</source>
+            </trans-unit>
+            <trans-unit id="pizza.price_takeaway">
+                <source>Price takeaway</source>
+            </trans-unit>
+            <trans-unit id="pizza.price_eat_in">
+                <source>Price eat-in</source>
+            </trans-unit>
+            <trans-unit id="pizza.image">
+                <source>Image</source>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

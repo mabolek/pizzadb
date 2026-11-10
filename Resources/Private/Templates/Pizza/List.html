@@ -1,0 +1,40 @@
+<div class="pizza-menu">
+    <f:if condition="{pizzas}">
+        <f:then>
+            <ul class="pizza-menu__list">
+                <f:for each="{pizzas}" as="pizza">
+                    <li class="pizza-card">
+                        <div class="pizza-card__media">
+                            <f:if condition="{pizza.image}">
+                                <f:then>
+                                    <f:image image="{pizza.image}" width="720c" height="480c" alt="{pizza.name}" loading="lazy" />
+                                </f:then>
+                                <f:else>
+                                    <span class="pizza-card__placeholder" aria-hidden="true"></span>
+                                </f:else>
+                            </f:if>
+                        </div>
+                        <div class="pizza-card__body">
+                            <h3 class="pizza-card__name">{pizza.name}</h3>
+                            <ul class="pizza-card__ingredients"><f:for each="{pizza.ingredientList}" as="ingredient"><li>{ingredient}</li></f:for></ul>
+                            <div class="pizza-card__description"><f:format.html>{pizza.description}</f:format.html></div>
+                            <dl class="pizza-card__prices">
+                                <div>
+                                    <dt>Takeaway</dt>
+                                    <dd><f:format.currency currencySign="$" decimalSeparator="." thousandsSeparator="," prependCurrency="true" separateCurrency="false">{pizza.priceTakeaway}</f:format.currency></dd>
+                                </div>
+                                <div>
+                                    <dt>Eat-in</dt>
+                                    <dd><f:format.currency currencySign="$" decimalSeparator="." thousandsSeparator="," prependCurrency="true" separateCurrency="false">{pizza.priceEatIn}</f:format.currency></dd>
+                                </div>
+                            </dl>
+                        </div>
+                    </li>
+                </f:for>
+            </ul>
+        </f:then>
+        <f:else>
+            <p>Our menu is being freshly prepared. Please check back soon.</p>
+        </f:else>
+    </f:if>
+</div>

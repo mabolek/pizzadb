@@ -1,0 +1,13 @@
+# Composer
+/vendor/
+/public/
+/var/
+
+# Composer auth (may contain tokens)
+/auth.json
+
+# OS and IDE files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
